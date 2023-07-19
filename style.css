@@ -1,0 +1,160 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+
+:root{
+    --font-family: 'Roboto', sans-serif;
+    --background-color: hsl(235, 18%, 26%);
+    --card-color: hsl(0, 0%, 100%);
+    --text-color: hsl(235, 18%, 26%);
+    --button-color: hsl(234, 29%, 20%);
+    --tomato-color: hsl(4, 100%, 67%);
+}
+
+body{
+    font-family: var(--font-family);
+    background-color: var(--background-color);
+    color: var(--text-color);
+}
+
+.card{
+    background-color: var(--card-color);
+    width: 60%;
+    display: flex;
+    justify-content: space-around;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    padding: 20px;
+    border-radius: 40px;
+}
+.right{
+    padding:70px 50px;
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+.right h1{
+    font-size: 52px;
+    font-weight: 700;
+}
+
+
+
+.right ul li{
+   padding: 8px 0;
+   font-weight: 400;
+}
+
+.right ul li img{
+    vertical-align: middle;
+    padding-right: 12px;
+}
+
+.right form{
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+}
+.right form input {
+    padding: 18px 0;
+    border-radius: 10px;
+    padding-left: 18px; 
+}
+
+.right form label{
+    font-size: 12px;
+    font-weight: 700;
+}
+
+.button {
+    padding: 18px 0;
+    margin: 10px 0;
+    border-radius: 10px;
+    outline: none;
+}
+
+ .button{
+    border: none;
+    cursor: pointer;
+    background-color: var(--button-color);
+    color: var(--card-color);
+    font-family: var(--font-family);
+    font-size: 16px;
+}
+.button:hover{
+    background-color: var(--tomato-color);
+    transition: .2s;
+}
+.sucessed{
+    display: none;
+    flex-direction: column;
+    width: 22%;
+    gap: 30px;
+    padding: 30px 60px;
+}
+.sucessed img{
+    align-self: self-start;
+}
+.sucessed h1{
+    font-size: 52px;
+    font-weight: 700;
+}
+.sucessed span{
+    font-weight: 700;
+}
+
+@media screen and (max-width: 1440px) {
+    .card {
+      width: 60%; /* Ajuste o valor conforme necessário */
+      /* Adicione outros estilos relevantes para laptops */
+    }
+    .sucessed{
+        width: 30%;
+    }
+  }
+@media screen and (max-width: 1184px)  {
+    .card{
+        width: 85%;
+    }
+    .sucessed{
+        width: 30%;
+    }
+  }
+@media screen and (max-width:830px ){
+    .card{
+        width: 92%;
+    }
+    .right{
+        padding: 0 12px;
+    }
+    .sucessed{
+        width: 50%;
+    }
+}
+
+@media screen and (max-width: 425px) {
+    body{
+        background-color: var(--card-color);
+        width: 100%;
+    }
+    .card{
+        display: flex;
+        flex-direction: column-reverse;
+    }
+    .card h1{
+        font-size: 42px;
+        padding-top: 32px;
+    }
+    .left img{
+        width: 100%;
+    }
+    .sucessed{
+        flex-direction: column;
+        padding-right: 200px;
+        
+    }
+    
+   
+    
+}
+
