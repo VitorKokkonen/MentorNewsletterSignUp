@@ -17,7 +17,7 @@ body{
 
 .card{
     background-color: var(--card-color);
-    width: 50%;
+    width: 60%;
     display: flex;
     justify-content: space-around;
     position: absolute;
@@ -83,7 +83,9 @@ body{
 }
 .button:hover{
     background-color: var(--tomato-color);
+    box-shadow: 0 0 22px var(--tomato-color);
     transition: .2s;
+    
 }
 .sucessed{
     display: none;
@@ -119,7 +121,7 @@ body{
         width: 30%;
     }
   }
-@media screen and (max-width:830px ){
+@media screen and (max-width:850px ){
     .card{
         width: 100%;
         flex-direction: column-reverse;
@@ -129,6 +131,7 @@ body{
     }
     .sucessed{
         width: 50%;
+        flex-direction: column;
     }
 }
 
@@ -149,6 +152,7 @@ body{
         width: 100%;
     }
     .sucessed{
+        display: none;
         flex-direction: column;
         padding-right: 200px;
         
