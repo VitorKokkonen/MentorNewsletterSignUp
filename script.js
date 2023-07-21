@@ -6,10 +6,12 @@ const span = document.getElementById('span')
 
 form.addEventListener('submit', (e) =>{
     e.preventDefault()
-    removeCard()
+
     const emailInput = form.querySelector('input[type="email"]')
-    span.textContent = emailInput.value
-    
+    let emailCapturado = emailInput.value
+    span.textContent = emailCapturado
+
+    removeCard()
 })
 
 btnDismiss.addEventListener('click', () => {
