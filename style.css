@@ -17,7 +17,7 @@ body{
 
 .card{
     background-color: var(--card-color);
-    width: 850px;
+    width: 880px;
     display: flex;
     justify-content: space-around;
     position: absolute;
@@ -59,6 +59,7 @@ body{
     padding: 18px 0;
     border-radius: 10px;
     padding-left: 18px; 
+    border: 1px solid var(--text-color);
 }
 
 .right form label{
@@ -105,22 +106,7 @@ body{
     font-weight: 700;
 }
 
-@media screen and (max-width: 1440px) {
-    .card {
-      width: 70%; 
-    }
-    .sucessed{
-        width: 30%;
-    }
-  }
-@media screen and (max-width: 1184px)  {
-    .card{
-        width: 90%;
-    }
-    .sucessed{
-        width: 30%;
-    }
-  }
+
 @media screen and (max-width:910px ){
     .card{
         align-items: center;
