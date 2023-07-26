@@ -8,10 +8,15 @@ form.addEventListener('submit', (e) =>{
     e.preventDefault()
 
     const emailInput = form.querySelector('input[type="email"]')
-    let emailCapturado = emailInput.value
-    span.textContent = emailCapturado
+    const emailCapturado = emailInput.value
+    
+    if (emailCapturado == '') {
+        alert('Preencha um Email');
+    } else {
+        span.textContent = emailCapturado
 
-    removeCard()
+        removeCard()
+    }
 })
 
 btnDismiss.addEventListener('click', () => {
