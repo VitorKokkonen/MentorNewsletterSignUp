@@ -61,11 +61,18 @@ body{
     border-radius: 10px;
     padding-left: 18px; 
     border: 1px solid var(--text-color);
+    background-color: none;
 }
 
 .right form label{
+    display: flex;
+    justify-content: space-between;
     font-size: 12px;
     font-weight: 700;
+}
+.error{
+    display: none;
+    color: red;
 }
 
 .button {
@@ -107,7 +114,22 @@ body{
     font-weight: 700;
 }
 
-
+/* @media screen and (max-width: 1440px) {
+    .card {
+      width: 70%; 
+    }
+    .sucessed{
+        width: 30%;
+    }
+  }
+@media screen and (max-width: 1184px)  {
+    .card{
+        width: 90%;
+    }
+    .sucessed{
+        width: 30%;
+    }
+  } */
 @media screen and (max-width:910px ){
     .card{
         align-items: center;
@@ -143,10 +165,10 @@ body{
         display: none;
         flex-direction: column;
         padding-right: 200px;
-        
+        height: 100%;
+                
     }
-    
-   
+
     
 }
 
